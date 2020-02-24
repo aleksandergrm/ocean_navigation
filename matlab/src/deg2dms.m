@@ -4,7 +4,7 @@ function dms = deg2dms(dd)
 %
   
     d = floor(dd);
-    m = (dd - d)*60;
+    m = floor((dd - d)*60);
     s = (dd - d - m/60)*3600;
     
     if abs(s - 60) < 1e-8

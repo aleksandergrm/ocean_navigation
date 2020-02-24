@@ -15,7 +15,7 @@ function [w1,d,fiv,lav] = GC_data(fi_1,la_1,fi_2,la_2)
     dfr = fi2r - fi1r;
     dlr = la2r - la1r;
     
-    % Find distabce
+    % Find distance
     cos_d = sin(fi1r) * sin(fi2r) + cos(fi1r) * cos(fi2r) * cos(abs(dlr)); 
     dr = acos(cos_d);
     d = r2d(dr)*60; % distance in Nm
@@ -25,10 +25,9 @@ function [w1,d,fiv,lav] = GC_data(fi_1,la_1,fi_2,la_2)
     w1 = r2d(course(w,dfr,dlr));
     
     % Vertex
-    psivr = asin(sin(w)*cos(fi1r));
-    pivr = asin(cot(w)*tan(psivr));
+    fivr = acos(sin(w)*cos(fi1r));
+    pivr = acos(cot(fivr)*tan(fi1r));
     
-    fivr = pi/2 - psivr;
     lavr = la1r + sign(dlr)*pivr;
         
     fiv = r2d(fivr);
