@@ -16,11 +16,11 @@ function print_RL_on_GC_mid_points(np,lat,long)
     else
         la_s = 'W';
     end
-    line = {1, abs(fi_1(1)), fi_1(2)+fi_1(3)/60, fi_s, abs(la_1(1)), la_1(2)+la_1(3)/60, la_s, '', ''};
     
     filename = 'voyage_plan.xlsx';
-    header = {' # ','fi[deg]','fi[min]','   ','la[deg]','la[min]','   ','course [deg]','distance [Nm]'};
-    writecell(header,filename,'Sheet',1,'Range','A1');
+    %header = {' # ','fi[deg]','fi[min]','   ','la[deg]','la[min]','   ','course [deg]','distance [Nm]'};
+    %writecell(header,filename,'Sheet',1,'Range','A1');
+    line = {1, abs(fi_1(1)), fi_1(2)+fi_1(3)/60, fi_s, abs(la_1(1)), la_1(2)+la_1(3)/60, la_s, '', ''};
     writecell(line,filename,'Sheet',1,'Range','A2');
     
     fprintf('*** Route Data ***\n');
