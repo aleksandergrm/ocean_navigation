@@ -13,7 +13,7 @@ function [w1,d] = RL_P1_data(fi_1,la_1,fi_2,la_2)
     la2r = d2r(dms2deg(la_2));
     
     dfr = fi2r - fi1r; % delta LAT with sign
-    dlr = la2r - la1r; % delta lONG with sign
+    dlr = d2r( get_delta_long(dms2deg(la_1), dms2deg(la_2)) ); % delta lONG with sign
     
     %
     % Calculation of tilde LAT (it will be always a positive number)

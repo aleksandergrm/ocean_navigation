@@ -3,5 +3,6 @@ function dd = dms2deg(x)
 % Author: aleksander.grm@fpp.uni-lj.si, 20/02/2020
 %
 
-    dd = x(1) + x(2)/60 + x(3)/3600;
+    sgn = sign(x(1));
+    dd = sgn * (abs(x(1)) + abs(x(2))/60 + abs(x(3))/3600 );
 end
