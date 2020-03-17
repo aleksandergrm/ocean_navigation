@@ -22,7 +22,7 @@ fprintf('GC: \x03C9=%.2f\xB0, d=%.2f Nm', w1_gc, d_gc)
 fprintf('P_v: %s', print_position(fiv, lav))
     
 % Dolo?ite število vmesnih to?k, ki se bodo izra?unale na Ortodromi
-np = 10; % pravilno nastavi, da bo Delta Lambda okoli 10 stopinj
+np = 20; % pravilno nastavi, da bo Delta Lambda okoli 10 stopinj
 ll = get_midpoints(la_1,la_2,np);
 lat = zeros(1,np+2);
 long = zeros(1,np+2);
