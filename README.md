@@ -8,4 +8,10 @@ Mixed codes to support classes in Ocena Navigation @ UL-FPP. The following diffe
   <li>celestial navigation</li>
 </ul>
 
-Project id developed under <a href="https://www.mathworks.com/products/matlab.html">MatLab</a> and  <a href="https://www.qt.io/">Qt</a> environmets and support text and graphic interfaces. 
+Project id developed under several environments:
+
+<ul>
+  <li><a href="https://www.jupyter.org/">JupyterLab</a></li>
+  <li><a href="https://www.mathworks.com/products/matlab.html">MatLab</a></li>
+  <li><a href="https://www.qt.io/">Qt - c++</a></li>
+</ul> 
