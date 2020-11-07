@@ -8,7 +8,7 @@ Mixed codes to support classes in Ocena Navigation @ UL-FPP. The following diffe
   <li>celestial navigation</li>
 </ul>
 
-Project id developed under several environments:
+Project is developed under several environments:
 
 <ul>
   <li><a href="https://www.jupyter.org/">JupyterLab</a></li>
